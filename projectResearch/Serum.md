@@ -1,5 +1,6 @@
 Serum
 ---
+# [참고 기사1](https://www.hankyung.com/finance/article/202108233123i)
 세럼은 FTX 거래소의 CEO인 샘이 미국 월가 트레이더 및 실리콘밸리 기업가로 구성된 팀과 함께 개발한 DEX다. 
 세럼 거래소의 기반이 되는 블록체인은 솔라나 체인이다. 
 솔라나 체인은 블록체인의 확장성을 해결하기 위해 등장한 플랫폼으로, 
@@ -48,7 +49,9 @@ SRM을 보유하면
 
 2021.08.24
 
-[참고 기사1](https://www.hankyung.com/finance/article/202108233123i)
+---
+
+# [참고 기사2](https://biz.chosun.com/international/international_general/2022/06/02/GQZNNPNYHBGYNGLJIOTITXPWPY/)
 
 2일 솔라나 블록 익스플로러 ‘솔라나 비치(Solana Beach)’에 따르면, 
 이날 새벽 2시경(한국 시각) 솔라나 메인넷은 새로운 블록 생성이 중단되면서 약 4시간 30분 가량 가동이 정지됐다.
@@ -69,7 +72,8 @@ SRM을 보유하면
 스웜(인공지능(AI)이나 머신러닝 기반으로 대규모 트랜잭션을 생성하고 전송해 네트워크를 마비시키는 방식) 공격을 받아
 7시간 동안 네트워크가 마비된 적이 있다.
 
-[참고 기사2](https://biz.chosun.com/international/international_general/2022/06/02/GQZNNPNYHBGYNGLJIOTITXPWPY/)
+---
+# [참고 기사3](https://www.blockmedia.co.kr/archives/231868)
 
 디크립트에 따르면, 
 디파이 및 암호화폐 평가 업체 디파이세이프티(DeFi Safety)가 꼽은 가장 나쁜 네트워크로 엑시인피니티(AXS)에 이어
@@ -80,8 +84,8 @@ SRM을 보유하면
 다양성이 적은 감사되지 않은 노드 클라이언트(소프트웨어) 등이다.
 
 2022.06.09
-[참고 기사3](https://www.blockmedia.co.kr/archives/231868)
 
+---
 [project-serum/serum-dex](https://github.com/project-serum/serum-dex/blob/master/dex/src/lib.rs)
 serum/dex/src/lib.rs
 ```rust
