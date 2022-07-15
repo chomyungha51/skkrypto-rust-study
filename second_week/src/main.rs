@@ -3,6 +3,7 @@ use std::io;
 struct MathOp {
     op1: u32,
     op2: u32,
+    op: String,
 }
 
 impl MathOp {
@@ -27,31 +28,60 @@ impl MathOp {
     }
 }
 
+const PLUS:&str = "+";
+const MIN:&str = "-";
+const MULT:&str = "*";
+const DIV:&str = "/";
+const REM:&str = "%";
+
 fn main() {
+    
+
     println!("Enter the first number");
     let mut a = String::new();
     io::stdin().read_line(&mut a);
     let a: u32 = a.trim().parse().expect("The first number is not a number");
+
+    println!("Enter the operation");
+    let mut op = String::new();
+    io::stdin().read_line(&mut op);
+    let op:&str = op.trim();
 
     println!("Enter the second number");
     let mut b = String::new();
     io::stdin().read_line(&mut b);
     let b: u32 = b.trim().parse().expect("The second number is not a number");
 
-    let target = MathOp { op1: a, op2: b };
-    let res = target.add();
-    println!("Add Result: {res}");
-    if (target.op1 > target.op2) {
-        let res = target.sub();
-        println!("Sub Result: {res}");
+    let target = MathOp { op1: a, op2: b, op: String::from(op) };
+
+    let mut result = 0;
+
+    match op {
+        PLUS => {
+            result = target.add();
+        },
+        MIN => {
+            if (target.op1 > target.op2) {
+                result = target.sub();
+                
+            }else {
+                println!("The second operand is too big");
+                return;
+            }
+        },
+        MULT => {
+            result = target.mul();
+        },
+        DIV => {
+            result = target.div();
+        },
+        REM => {
+            result = target.rem();
+        },
+        _ => {
+            println!("Not supported operation");
+            return;
+        },
     }
-
-    let res = target.mul();
-    println!("Mul Result: {res}");
-
-    let res = target.div();
-    println!("Div Result: {res}");
-
-    let res = target.rem();
-    println!("Rem Result: {res}");
+    println!("Result: {}", result);
 }
